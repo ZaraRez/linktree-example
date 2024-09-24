@@ -1,0 +1,33 @@
+
+/* style.css */
+body {
+    /* Create a linear gradient background */
+    background: linear-gradient(to right, #5ffff7, #7bfeca);
+    /* Optional: Set the height and width */
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.center-arial {
+    text-align:center;
+    font-family:"Arial, Helvetica, sans-serif";
+}
+#name { text-align: left;}
+
+.boxed-list {list-style-type: none;
+padding: 5%;
+margin:auto;
+}
+.boxed-list li {
+    background-color: rgb(169, 219, 242);
+    border: 1px solid;
+    padding: 10px;
+    margin:auto;
+    text-align: center;
+}
+.boxed-list li:hover{
+    background-color: rgb(255, 172, 127);
+    cursor: pointer;
+}
+p{text-align: center;}
