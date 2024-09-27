@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahra Rezaie - links</title>
+    <meta name="description" content="Professional profile of Zahra Rezaie, GIS and Aviation Expert">
+    <title>Zahra Rezaie - Professional Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><Div class="container"></Div>
-        <h1 class="center-arial">Zahra Rezaie</h1>
-    </header>
-    <div><img src="Zahra.jpg" id= "image" alt="profile image"></div>
-    <nav>
-        <Div> <div> <h2 class="center-arial" id="name">About me</h2> <p>GIS & Aviation Enthusiast | RPAS Pilot | Full-Stack Developer in Training</p></div>
-        <ul class="boxed-list">
-            <li><a href="https://www.linkedin.com/in/zahrarezaie/">LinkedIn</a></li>
-            <li><a href="https://https://github.com/ZaraRez/linktree-example.git">GitHub</a></li>
-            <li><a href="https://www.instagram.com/zahra.rezaie87/">Instagram</a></li>
-            <li><a href="https://www.facebook.com">Facebook</a></li>
-            <li><a href="https://www.twitter.com">Twitter</a></li>
-        </ul>
-    </Div>
-    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Profile Header -->
+        <header class="header">
+            <img src="assets/Zahra.jpeg" alt="Profile Image" class="profile-image">
+            <h1>Zahra Rezaie</h1>
+            <p>GIS & Aviation Enthusiast | RPAS Pilot | Full-Stack Developer in Training</p>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p> A professional with expertise in Geographic Information Systems (GIS), RPAS Advanced Operations, and Full-Stack Development. I’m passionate about solving complex problems, collaborating with others, and making impactful contributions.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Geographic Information Systems (GIS)</li>
+                <li>RPAS Pilot - Advanced Operations</li>
+                <li>Full-Stack Development</li>
+                <li>Data Visualization & Mapping</li>
+                <li>Project Management</li>
+            </ul>
+        </section>
+
+        <!-- Navigation Links (Flex Row) -->
+        <nav class="links-section">
+            <ul class="link-list">
+                <li><a href="https://www.linkedin.com/in/zahrarezaie" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ZaraRez" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/zahra.rezaie87/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contact Form Section -->
+        <section class="form-section">
+            <h2>Get in Touch</h2>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Zahra Rezaie | GIS, Aviation & Technology</p>
+    </footer>
+
 </body>
 </html>
+

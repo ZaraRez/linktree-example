@@ -1,37 +1,209 @@
-
-/* style.css */
-body {
-    /* Create a linear gradient background */
-    background: linear-gradient(to right, #5ffff7, #7bfeca);
-    /* Optional: Set the height and width */
-    height: 100vh;
+/* General Reset */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
-#image{ 
-height: 100px;
-width: 100px;
 
-}
-.center-arial {
-    text-align:center;
-    font-family:"Arial, Helvetica, sans-serif";
-}
-#name { text-align: left;}
+/* Body and General Styling */
+body, html {
+    font-family: 'Georgia', serif; /* Body text uses Georgia (serif) */
+    color: #000; /* Solid black for text */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+    background-image: url('Assets/background.jpg'); /* Your custom background image */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Make background image fixed */
 
-.boxed-list {list-style-type: none;
-padding: 5%;
-margin:auto;
+/* Header Styling */
+h1, h2 {
+    font-family: 'Roboto', sans-serif; /* Headings use Roboto (sans-serif) */
+    color: #000; /* Solid black for headings */
 }
-.boxed-list li {
-    background-color: rgb(169, 219, 242);
-    border: 1px solid;
-    padding: 10px;
-    margin:auto;
+
+
+/* Main Container Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light transparency for contrast */
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
 }
-.boxed-list li:hover{
-    background-color: rgb(255, 172, 127);
-    cursor: pointer;
+
+/* Profile Image */
+.profile-image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
-p{text-align: center;}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #0f27dd; /* Solid black for header */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #000; /* Solid black for subtext */
+}
+
+/* Links Section (Flexbox Horizontal) */
+.links-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+    gap: 20px; /* Gap between links */
+}
+
+.link-list li {
+    display: inline;
+}
+
+.link-list a {
+    text-decoration: none;
+    background-color: #4682B4; /* Steel blue */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.link-list a:hover {
+    background-color: #5F9EA0; /* Softer blue on hover */
+}
+
+/* About Me, Skills, Contact, Form Section */
+.about-me, .skills, .contact, .form-section {
+    margin: 30px 0;
+    color: #000; /* Solid black for text in all sections */
+}
+
+h2 {
+    color: #000; /* Solid black for section headers */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: square;
+    color: #000; /* Solid black for skill list items */
+    text-align: left;
+    margin-left: 20px;
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Form Inputs */
+input, textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000; /* Black text in inputs */
+    font-size: 1rem;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* Submit Button */
+.submit-button {
+    padding: 12px 30px;
+    background-color: #4682B4; /* Steel blue */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #5F9EA0;
+}
+/* Form Section Styling */
+input, textarea {
+    width: 100%; /* Full width to ensure responsiveness */
+    max-width: 400px; /* Limits width to a standard size */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000; /* Black text in inputs */
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px; /* Standard height for a message box */
+    max-width: 400px; /* Limits width to standard */
+}
+
+/* Button */
+.submit-button {
+    width: 100%;
+    max-width: 200px; /* Standard size for buttons */
+    padding: 12px 30px;
+    background-color: #4682B4; /* Steel blue */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+/* Footer Styling */
+.footer {
+    margin-top: 40px;
+    color: #000; /* Solid black for footer text */
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .submit-button, .link-list a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+    .submit-button, .link-list a {
+        font-size: 0.9rem;
+    }
+}
